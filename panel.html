@@ -1,68 +1,97 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>From Pencil to Heart | パネル</title>
+  <title>From Pencil to Heart | Panel</title>
   <link rel="stylesheet" href="my web site css.css" />
   <style>
     body{
       margin:0;
-      background:#fff;
+      background:#ffffff;
       padding:16px;
       display:flex;
       justify-content:center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
     .panel{
       width:100%;
       max-width:900px;
     }
-    .panel h1{ font-size:2rem; margin-bottom:10px; }
-    .panel h2{ font-size:1.4rem; margin-top:20px; }
-    .panel p, .panel li{ font-size:1.1rem; line-height:1.7; }
+    .panel h1{ font-size:2rem; margin-bottom:8px; }
+    .panel h2{ font-size:1.4rem; margin-top:20px; margin-bottom:6px; }
+    .panel p, .panel li{ font-size:1.05rem; line-height:1.7; }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+      gap:12px;
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+    .card{
+      border:1px solid #ddd;
+      border-radius:6px;
+      overflow:hidden;
+      background:#fafafa;
+    }
+    .card img{
+      width:100%;
+      display:block;
+    }
+    .meta{
+      padding:6px 8px;
+      font-size:0.9rem;
+      color:#555;
+    }
 
     @media(max-width:600px){
       .panel h1{ font-size:1.7rem; }
       .panel h2{ font-size:1.25rem; }
-      .panel p, .panel li{ font-size:1rem; }
+      .panel p, .panel li{ font-size:0.98rem; }
     }
   </style>
 </head>
 
 <body>
-  <main class="panel section">
+  <main class="panel">
     <h1>From Pencil to Heart</h1>
-    <p>〜心に届く鉛筆ポートレート〜</p>
+    <p>Pencil portrait art that captures emotion and quiet stories in every face.</p>
 
-    <h2>作品の説明</h2>
+    <h2>About this work</h2>
     <p>
-      この作品は、人の表情や気持ちを鉛筆で表現したポートレート作品と、  
-      その作品を紹介するWebサイトです。ギャラリーで作品を見たり、  
-      プリントを購入したり、オーダー依頼ができます。
+      This project combines my pencil portrait artworks with a simple web gallery.  
+      Visitors can view my drawings, imagine ordering prints, and see how a small  
+      personal brand can start from just a pencil and a page.
     </p>
 
-    <h2>作品の画像</h2>
+    <h2>Screens from the website</h2>
     <div class="grid">
-      <article class="card"><img src="art 2.jpg"><div class="meta">ギャラリー画面</div></article>
-      <article class="card"><img src="art 16.jpg"><div class="meta">プリントショップ画面</div></article>
+      <article class="card">
+        <img src="art 2.jpg" alt="Gallery screen">
+        <div class="meta">Gallery screen</div>
+      </article>
+      <article class="card">
+        <img src="art 16.jpg" alt="Print shop screen">
+        <div class="meta">Print shop style screen</div>
+      </article>
     </div>
 
-    <h2>使った技術</h2>
+    <h2>Technologies used</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS（グラデーション・レスポンシブ）</li>
-      <li>JavaScript（画像モーダル）</li>
+      <li>HTML for structure</li>
+      <li>CSS for layout, gradients, and responsive design</li>
+      <li>JavaScript for image modal pop‑ups (on the main site)</li>
     </ul>
 
-    <h2>がんばったところ</h2>
+    <h2>What I focused on</h2>
     <ul>
-      <li>鉛筆アートの雰囲気に合うデザインを工夫しました。</li>
-      <li>スマホでも見やすいように調整しました。</li>
-      <li>画像をタップすると大きく見えるようにしました。</li>
+      <li>Matching the calm, soft feeling of pencil art with the web design.</li>
+      <li>Making sure the layout works on both phones and larger screens.</li>
+      <li>Letting viewers see the artwork clearly, without too many distractions.</li>
     </ul>
 
-    <h2>これからやりたいこと</h2>
-    <p>注文フォームの保存機能と多言語対応を追加したいです。</p>
-  </main>
-</body>
-</html>
+    <h2>Next steps</h2>
+    <p>
+      In the future, I want to add a real order form, multi‑language support,  
+      and maybe a simple system to manage
