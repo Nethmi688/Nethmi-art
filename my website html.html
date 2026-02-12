@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
   <title>From Pencil to Heart | Nethmi</title>
   <meta name="description" content="Nethmi Kaushalya — Pencil Drawings, Portraits, Commissions & Prints" />
   <meta name="author" content="Nethmi Kaushalya" />
   <link rel="icon" href="WhatsApp Image 2025-08-21 at 01.26.36_fcf5571d.jpg" />
-  <link rel="stylesheet" href="my web site css.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+  <link rel="stylesheet" href="my website css.css" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
+      <a class="btn alt" href="login.html">Login</a>
       <a href="#home" class="brand">
         <span class="logo">NK</span>
         <span>Nethmi • Art</span>
@@ -23,31 +24,32 @@
         <a href="#shop">Shop</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-       
       </nav>
       <div class="cta">
         <a class="btn alt" href="#shop">Buy Arts</a>
       </div>
+    </div>
   </header>
 
   <main id="home" class="container">
     <section class="hero">
-       <div>
-  <span class="badge">🎨 Pencil Drawings • Portraits</span>
-  <h1>From Pencil to Heart</h1>
-  <div class="profile-section">
-    <img class="profile-pic" src="WhatsApp Image 2025-08-21 at 01.26.36_fcf5571d.jpg" alt="Nethmi Portrait">
-    <div class="profile-text">
-      <h1>Hi, I'm <span class="gradient-text">Nethmi</span> — I draw human portraits with care.</h1>
-      <p>My goal is to bring happiness to people's hearts through pencil art. You can buy prints, request commissions, and view my latest works.</p>
-    </div>
-  </div>
-  <div class="cta" style="margin-top: 20px; display: flex; gap: 10px;">
-  <a class="btn" href="#gallery">Explore Gallery</a>
-  <a class="btn alt" href="#shop">Popular Prints</a>
-</div>
-</div>
+      <div>
+        <span class="badge">🎨 Pencil Drawings • Portraits</span>
+        <h1>From Pencil to Heart</h1>
+        <div class="profile-section">
+          <img class="profile-pic" src="WhatsApp Image 2025-08-21 at 01.26.36_fcf5571d.jpg" alt="Nethmi Portrait">
+          <div class="profile-text">
+            <h1>Hi, I'm <span class="gradient-text">Nethmi</span> — I draw human portraits with care.</h1>
+            <p>My goal is to bring happiness to people's hearts through pencil art. You can buy prints, request commissions, and view my latest works.</p>
+          </div>
+        </div>
+        <div class="cta" style="margin-top: 20px;">
+          <a class="btn" href="#gallery">Explore Gallery</a>
+          <a class="btn alt" href="#shop">Popular Prints</a>
+        </div>
+      </div>
     </section>
+
     <section id="gallery" class="section">
       <h2>Gallery</h2>
       <p class="sub">Click on an image to view in full size.</p>
@@ -55,21 +57,31 @@
         <article class="card">
           <img src="art 2.jpg" alt="Dreamer's Gaze" loading="lazy" />
           <div class="meta">
-            <div class="grid" id="galleryGrid">
-        <article class="card">
-          <img src="art 11.jpg" alt="Dreamer's Gaze" loading="lazy" />
-            <div>"Dreamer's Gaze" — 2025 • Pencil</div>
+            "Dreamer's Gaze" — 2025 • Pencil<br>
             <button class="buy" data-link="https://payhip.com/">Buy Print</button>
-            </div>
-            
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="art 11.jpg" alt="Dreamer's Gaze 2" loading="lazy" />
+          <div class="meta">
+            "Dreamer's Gaze II" — 2025 • Pencil<br>
+            <button class="buy" data-link="https://payhip.com/">Buy Print</button>
+          </div>
         </article>
 
         <article class="card">
           <img src="art 7.jpg" alt="Silent Thoughts" loading="lazy" />
           <div class="meta">
-            <article class="card">
-          <img src="art22.jpg" alt="Silent Thoughts" loading="lazy" />
-            <div>"Silent Thoughts" — 2024 • Pencil</div>
+            "Silent Thoughts" — 2024 • Pencil<br>
+            <button class="buy" data-link="https://gumroad.com/">Buy Print</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="art22.jpg" alt="Silent Thoughts 2" loading="lazy" />
+          <div class="meta">
+            "Silent Thoughts II" — 2024 • Pencil<br>
             <button class="buy" data-link="https://gumroad.com/">Buy Print</button>
           </div>
         </article>
@@ -77,20 +89,27 @@
         <article class="card">
           <img src="art 1.jpg" alt="Gentle Smile" loading="lazy" />
           <div class="meta">
-            <article class="card">
-          <img src="art21.jpg" alt="Silent Thoughts" loading="lazy" />
-            <div>"Gentle Smile" — 2025 • Pencil</div>
+            "Gentle Smile" — 2025 • Pencil<br>
+            <button class="buy" data-link="https://your-shop-link.example">Buy Print</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="art21.jpg" alt="Gentle Smile 2" loading="lazy" />
+          <div class="meta">
+            "Gentle Smile II" — 2025 • Pencil<br>
             <button class="buy" data-link="https://your-shop-link.example">Buy Print</button>
           </div>
         </article>
       </div>
     </section>
-    </section>
-<div id="imageModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImg" />
-  <div id="caption"></div>
-</div>
+
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" />
+      <div id="caption"></div>
+    </div>
+
     <section id="shop" class="section">
       <h2>Print Shop</h2>
       <div class="shop">
@@ -131,6 +150,7 @@
         </div>
       </div>
     </section>
+
     <section id="commissions" class="section">
       <h2>Request</h2>
       <form action="mailto:nkaushalya688@gmail.com" method="POST" enctype="text/plain">
@@ -146,6 +166,7 @@
         <button type="submit" class="btn">Send Request</button>
       </form>
     </section>
+
     <section id="about" class="section about">
       <h2>About Me</h2>
       <p>I'm <strong>Nethmi Kaushalya</strong>, a pencil artist in human portraits. I aim to brighten someone's day through pencil art.</p>
@@ -156,63 +177,66 @@
         <li>You’re welcome to explore my pencil drawings on this site—purchase a piece you love or request a custom portrait tailored to your preferences.</li>
       </ul>
     </section>
+
     <section id="contact" class="section">
       <h2>Contact</h2>
       <div class="social">
         <a href="mailto:nkaushalya688@gmail.com">
-    <img src="gmail icon.png" alt="Email" class="icon"> Email
-  </a>
-  <a href="https://instagram.com/" target="_blank">
-    <img src="instergram.jpeg" alt="Instagram" class="icon"> Instagram
-  </a>
-  <a href="https://facebook.com/" target="_blank">
-    <img src="facebook icon.jpeg" alt="Facebook" class="icon"> Facebook
-  </a>
-  <a href="https://wa.me/your-number" target="_blank">
-    <img src="whatsapp icon.jpeg" alt="WhatsApp" class="icon"> WhatsApp
-  </a>
+          <img src="gmail icon.png" alt="Email" class="icon"> Email
+        </a>
+        <a href="https://instagram.com/" target="_blank">
+          <img src="instergram.jpeg" alt="Instagram" class="icon"> Instagram
+        </a>
+        <a href="https://facebook.com/" target="_blank">
+          <img src="facebook icon.jpeg" alt="Facebook" class="icon"> Facebook
+        </a>
+        <a href="https://wa.me/your-number" target="_blank">
+          <img src="whatsapp icon.jpeg" alt="WhatsApp" class="icon"> WhatsApp
+        </a>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div>© <span id="year"></span> Nethmi Kaushalya — All rights reserved.</div>
     </div>
   </footer>
-<script>
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImg");
-  const captionText = document.getElementById("caption");
-  const closeBtn = document.querySelector(".close");
 
-  const galleryImages = document.querySelectorAll("#galleryGrid img");
-  const shopImages = document.querySelectorAll(".shop img");
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const captionText = document.getElementById("caption");
+    const closeBtn = document.querySelector(".close");
 
-  function openModal(img) {
-    modal.style.display = "block";
-    modalImg.src = img.src;
-    captionText.innerText = img.alt;
-  }
+    const galleryImages = document.querySelectorAll("#galleryGrid img");
+    const shopImages = document.querySelectorAll(".shop img");
 
-  galleryImages.forEach(img => {
-    img.addEventListener("click", () => openModal(img));
-  });
-
-  shopImages.forEach(img => {
-    img.addEventListener("click", () => openModal(img));
-  });
-
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
+    function openModal(img) {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      captionText.innerText = img.alt;
     }
-  });
-</script>
-</body>
-   </html>
 
-  
+    galleryImages.forEach(img => {
+      img.addEventListener("click", () => openModal(img));
+    });
+
+    shopImages.forEach(img => {
+      img.addEventListener("click", () => openModal(img));
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
