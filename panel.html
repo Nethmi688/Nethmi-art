@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>From Pencil to Heart | パネル</title>
+  <link rel="stylesheet" href="my web site css.css" />
+  <style>
+    body{
+      margin:0;
+      background:#fff;
+      padding:16px;
+      display:flex;
+      justify-content:center;
+    }
+    .panel{
+      width:100%;
+      max-width:900px;
+    }
+    .panel h1{ font-size:2rem; margin-bottom:10px; }
+    .panel h2{ font-size:1.4rem; margin-top:20px; }
+    .panel p, .panel li{ font-size:1.1rem; line-height:1.7; }
+
+    @media(max-width:600px){
+      .panel h1{ font-size:1.7rem; }
+      .panel h2{ font-size:1.25rem; }
+      .panel p, .panel li{ font-size:1rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="panel section">
+    <h1>From Pencil to Heart</h1>
+    <p>〜心に届く鉛筆ポートレート〜</p>
+
+    <h2>作品の説明</h2>
+    <p>
+      この作品は、人の表情や気持ちを鉛筆で表現したポートレート作品と、  
+      その作品を紹介するWebサイトです。ギャラリーで作品を見たり、  
+      プリントを購入したり、オーダー依頼ができます。
+    </p>
+
+    <h2>作品の画像</h2>
+    <div class="grid">
+      <article class="card"><img src="art 2.jpg"><div class="meta">ギャラリー画面</div></article>
+      <article class="card"><img src="art 16.jpg"><div class="meta">プリントショップ画面</div></article>
+    </div>
+
+    <h2>使った技術</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS（グラデーション・レスポンシブ）</li>
+      <li>JavaScript（画像モーダル）</li>
+    </ul>
+
+    <h2>がんばったところ</h2>
+    <ul>
+      <li>鉛筆アートの雰囲気に合うデザインを工夫しました。</li>
+      <li>スマホでも見やすいように調整しました。</li>
+      <li>画像をタップすると大きく見えるようにしました。</li>
+    </ul>
+
+    <h2>これからやりたいこと</h2>
+    <p>注文フォームの保存機能と多言語対応を追加したいです。</p>
+  </main>
+</body>
+</html>
