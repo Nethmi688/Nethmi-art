@@ -30,7 +30,7 @@ body{
   animation: bgPan 18s ease infinite;
   color: #222;
   line-height: 1.5;
-  padding-top: 120px; /* header height */
+  padding-top: 90px; /* header height */
 }
 
 @keyframes bgPan{
@@ -47,96 +47,106 @@ body{
 }
 
 /* ================================
-   SAATCHI STYLE HEADER (FIXED)
+   HEADER (NK • Nethmi Art)
 ================================ */
 
-.sa-header {
-  width: 100%;
+header.nav {
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 9999;
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  background: linear-gradient(135deg, #ff99cc, #66a3ff);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.16);
 }
 
-/* Promo bar */
-.sa-promo-bar {
-  background: #DA381F;
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  max-width:var(--max-width);
+  width:100%;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+}
+
+.brand .logo {
+  width:40px;
+  height:40px;
+  border-radius:8px;
+  background: linear-gradient(135deg,var(--pink-2),var(--accent));
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:800;
+  box-shadow:var(--shadow);
+}
+
+.menu {
+  display:flex;
+  gap:20px;
+}
+
+.menu a {
   color: #fff;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 13px;
-  font-weight: 600;
-  display: block !important;
+  text-decoration:none;
+  font-weight:600;
+  font-size:1rem;
+  opacity:0.95;
+  transition: color .22s ease;
 }
 
-/* Main header */
-.sa-header-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
-  border-bottom: 1px solid #e5e5e5;
-  background: #fff;
+.menu a:hover {
+  color: #ffccff;
 }
 
-/* Logo */
-.sa-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
+.cta {
+  display:flex;
+  gap:10px;
 }
 
-.sa-logo-icon {
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
-  border: 2px solid #222;
+.cta .btn,
+.cta .btn.alt {
+  border-radius:24px;
+  padding:8px 14px;
+  text-decoration:none;
+  font-weight:700;
+  color:#fff;
+  background: linear-gradient(45deg, #ff66b2, #3385ff);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border:none;
+  cursor:pointer;
 }
 
-.sa-logo-text {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  color: #222;
-}
+/* ⭐ MOBILE HEADER FIX — THIS IS THE IMPORTANT PART ⭐ */
+@media (max-width: 520px) {
 
-/* Icons */
-.sa-icons {
-  display: flex;
-  gap: 18px;
-}
+  /* Menu hide ok */
+  .menu { display: none; }
 
-.sa-icon-btn {
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.sa-icon-btn:hover {
-  opacity: 0.6;
-}
-
-/* MOBILE FIX */
-@media (max-width: 768px) {
-
-  .sa-header-main {
-    padding: 10px 16px;
+  /* FORCE HEADER TO SHOW */
+  header.nav {
+    display: flex !important;
+    padding: 12px 16px;
   }
 
-  .sa-logo-text {
-    font-size: 14px;
-    letter-spacing: 0.15em;
-  }
-
-  .sa-icons {
-    gap: 14px;
-  }
-
-  .sa-icon-btn {
-    font-size: 18px;
+  /* Reduce body padding for mobile */
+  body {
+    padding-top: 70px;
   }
 }
 
