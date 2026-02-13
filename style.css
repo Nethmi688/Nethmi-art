@@ -374,3 +374,38 @@ header.nav {
   text-align: center;
   display: inline-block;
 }
+/* FORCE HEADER TO SHOW ON MOBILE */
+.sa-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #fff;
+}
+
+/* Make promo bar visible on all screens */
+.sa-promo-bar {
+  display: block !important;
+}
+
+/* Mobile layout fix */
+@media (max-width: 768px) {
+
+  .sa-header-main {
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sa-logo-text {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+  }
+
+  .sa-icons {
+    gap: 14px;
+  }
+
+  .sa-icon-btn {
+    font-size: 18px;
+  }
+}
