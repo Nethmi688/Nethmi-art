@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
   <title>From Pencil to Heart | Nethmi</title>
   <meta name="description" content="Nethmi Kaushalya — Pencil Drawings, Portraits, Commissions & Prints" />
@@ -13,13 +12,17 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="nav">
     <div class="container nav-inner">
+
       <a href="#home" class="brand">
         <span class="logo">NK</span>
         <span>Nethmi • Art</span>
       </a>
 
+      <!-- DESKTOP MENU -->
       <nav class="menu">
         <a href="login.html">Login</a>
         <a href="#gallery">Gallery</a>
@@ -28,10 +31,25 @@
         <a href="#contact">Contact</a>
       </nav>
 
+      <!-- HAMBURGER BUTTON (PHONE ONLY) -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+      <!-- CTA BUTTON -->
       <div class="cta">
         <a class="btn alt" href="#shop">Buy Arts</a>
       </div>
+
     </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="login.html">Login</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
   </header>
 
   <main id="home" class="container">
@@ -57,40 +75,27 @@
       </div>
     </section>
 
-    <!-- GALLERY (Hidden by default) -->
+    <!-- GALLERY -->
     <section id="gallery" class="section">
       <h2>Gallery</h2>
       <div class="grid" id="galleryGrid">
 
         <article class="card">
           <img src="art 2.jpg" alt="Dreamer's Gaze" loading="lazy" />
-          <div class="meta">
-            <button class="buy" data-link="https://payhip.com/"></button>
-          </div>
         </article>
 
         <article class="card">
           <img src="art 11.jpg" alt="Dreamer's Gaze 2" loading="lazy" />
-          <div class="meta">
-            <button class="buy" data-link="https://payhip.com/"></button>
-          </div>
         </article>
 
         <article class="card">
           <img src="art 7.jpg" alt="Silent Thoughts" loading="lazy" />
-          <div class="meta">
-            <button class="buy" data-link="https://gumroad.com/"></button>
-          </div>
         </article>
 
         <article class="card">
           <img src="art 1.jpg" alt="Gentle Smile" loading="lazy" />
-          <div class="meta">
-            <button class="buy" data-link="https://your-shop-link.example"></button>
-          </div>
         </article>
 
-        
       </div>
     </section>
 
@@ -218,12 +223,11 @@
     </div>
   </footer>
 
-  <!-- EXISTING SCRIPT -->
+  <!-- MODAL SCRIPT -->
   <script>
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImg");
     const captionText = document.getElementById("caption");
-    const closeBtn = document.querySelector(".close");
 
     const galleryImages = document.querySelectorAll("#galleryGrid img");
     const shopImages = document.querySelectorAll(".shop img");
@@ -242,10 +246,6 @@
       img.addEventListener("click", () => openModal(img));
     });
 
-    closeBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
     window.addEventListener("click", (e) => {
       if (e.target === modal) {
         modal.style.display = "none";
@@ -255,7 +255,14 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
-  <!-- ⭐ NEW SCRIPT: SHOW GALLERY + SCROLL ⭐ -->
+  <!-- HAMBURGER MENU SCRIPT -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("show");
+    }
+  </script>
+
+  <!-- SHOW GALLERY -->
   <script>
     document.getElementById("openGallery").addEventListener("click", function () {
       const gallery = document.getElementById("gallery");
