@@ -68,10 +68,8 @@ header.nav {
 .nav-inner{
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  max-width:var(--max-width);
   width:100%;
+  max-width:var(--max-width);
 }
 
 .brand {
@@ -100,6 +98,7 @@ header.nav {
 .menu {
   display:flex;
   gap:20px;
+  margin-left: auto;
 }
 
 .menu a {
@@ -119,6 +118,7 @@ header.nav {
 .cta {
   display:flex;
   gap:10px;
+  margin-left: 10px;
 }
 
 .cta .btn,
@@ -143,7 +143,7 @@ header.nav {
   font-size: 30px;
   color: #fff;
   cursor: pointer;
-  margin-left: auto;   /* pushes icon to the right */
+  margin-left: auto; /* push to right */
 }
 
 .mobile-menu {
