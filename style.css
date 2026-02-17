@@ -134,10 +134,10 @@ header.nav {
 
 /* ⭐ MOBILE HEADER FIX — THIS IS THE IMPORTANT PART ⭐ */
 @media (max-width: 520px) {
+  .menu { display: flex; }
+}
 
-  /* Menu hide ok */
-  .menu { display: none; }
-
+ 
   /* FORCE HEADER TO SHOW */
   header.nav {
     display: flex !important;
