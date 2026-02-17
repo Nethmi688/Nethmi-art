@@ -134,7 +134,14 @@ header.nav {
 
 /* ⭐ MOBILE HEADER FIX — THIS IS THE IMPORTANT PART ⭐ */
 @media (max-width: 520px) {
-  .menu { display: flex; }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+  }
 }
 
  
@@ -145,10 +152,12 @@ header.nav {
   }
 
   /* Reduce body padding for mobile */
+ @media (max-width: 520px) {
   body {
     padding-top: 70px;
   }
 }
+
 
 /* ================================
    HERO SECTION
